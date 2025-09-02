@@ -1,3 +1,8 @@
+### Maps.py
+#1-------------------------------------------------------
+#Given a list of names like ["ali", "Sara", "omid"], use map to return a new list with each name capitalized (first letter uppercase, rest lowercase).
+
+
 names = ["sara", "ali", "reza"]
 
 def capitalized_names():
@@ -5,7 +10,8 @@ def capitalized_names():
 print(capitalized_names())
 
 
-#2
+#2-------------------------------------------------------
+#Given a list of Celsius temperatures, use map to convert them to Fahrenheit using the formula F = C * 9/5 + 32 .
 temperatures_celsius = []
 
 while True:
@@ -20,7 +26,9 @@ while True:
 
 print("Celsius to Fahrenheit:", list(map(lambda c: (c * 9/5) + 32, temperatures_celsius)))
 
-#3
+#3-------------------------------------------------------
+#Use map to transform a list of strings ["1","2","3","-4"] into integers. Filter out any values that cannot be converted 
+# (hint: use a helper function that returns None on failure and then remove None later).
 
 def is_integer(s):
     try:
